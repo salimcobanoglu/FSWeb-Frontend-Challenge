@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 5rem;
-  background-color: lightgoldenrodyellow;
+  /* background-color: lightgoldenrodyellow; */
 }
 
 .projects {
@@ -14,7 +14,7 @@
   align-items: center;
   width: 80%;
   border-top: 2px solid #c4e2e4;
-  background-color: lightgray;
+  /* background-color: lightgray; */
 }
 .projectCol {
   display: flex;

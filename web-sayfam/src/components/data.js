@@ -26,6 +26,19 @@ export const postData_En = {
   skillsDesc3:
     "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   projectsTitle: "Projects",
+  projectVisit: "View Site",
+  projectsDiary: "Diary",
+  projectsDiaryDesc:
+    "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+
+  projectsPizza: "Pizza Order",
+  projectsPizzaDesc:
+    "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+
+  projectsReactWars: "React Basic",
+  projectsReactWarsDesc:
+    "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+
   footerTitle1: "Let’s work together on",
   footerTitle2: "your next product.",
   footerBlog: "Personal Blog",
@@ -65,6 +78,19 @@ export const postData_Tr = {
   skillsDesc3:
     "Şehvetle kör olmadıkça ortaya çıkmazlar; görevlerini bırakan kusurludur ve ruh yumuşar, bu zahmettir.",
   projectsTitle: "Projeler",
+  projectVisit: "Ziyaret Et",
+  projectsDiary: "Gunluk",
+  projectsDiaryDesc:
+    "Kullanıcılarınızın hangi tanımlama bilgilerini kabul edeceklerini veya reddedeceklerini seçmelerine olanak tanıyan basit, özelleştirilebilir, minimum kurulumlu bir tanımlama bilgisi eklentisi. Bu, vanilya JS, SCSS ve Parcel Bundler ile oluşturulmuştur ve bir NPM paketi olarak mevcuttur ve git deposu, kod ve temalar için her türlü özelleştirmeyi mümkün kılar.",
+
+  projectsPizza: "Pizza Siparisi Ver",
+  projectsPizzaDesc:
+    "Kullanıcılarınızın hangi tanımlama bilgilerini kabul edeceklerini veya reddedeceklerini seçmelerine olanak tanıyan basit, özelleştirilebilir, minimum kurulumlu bir tanımlama bilgisi eklentisi. Bu, vanilya JS, SCSS ve Parcel Bundler ile oluşturulmuştur ve bir NPM paketi olarak mevcuttur ve git deposu, kod ve temalar için her türlü özelleştirmeyi mümkün kılar.",
+
+  projectsReactWars: "Temel React",
+  projectsReactWarsDesc:
+    "Kullanıcılarınızın hangi tanımlama bilgilerini kabul edeceklerini veya reddedeceklerini seçmelerine olanak tanıyan basit, özelleştirilebilir, minimum kurulumlu bir tanımlama bilgisi eklentisi. Bu, vanilya JS, SCSS ve Parcel Bundler ile oluşturulmuştur ve bir NPM paketi olarak mevcuttur ve git deposu, kod ve temalar için her türlü özelleştirmeyi mümkün kılar.",
+
   footerTitle1: "Bir sonraki projenizde",
   footerTitle2: "birlikte calisalim.",
   footerBlog: "Kisisel Blog",

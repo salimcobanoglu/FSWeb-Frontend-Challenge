@@ -137,3 +137,32 @@ body {
   max-width: 1440px;
   flex-direction: column;
 }
+
+.dark-mode {
+  background-color: #252128;
+  color: white;
+}
+
+.dark-mode .modeText {
+  color: #d9d9d9;
+}
+
+/* .dark-mode .modeText span {
+  color: white;
+} */
+
+.dark-mode .navName {
+  color: #6b7280;
+}
+
+.dark-mode .intro {
+  color: white;
+}
+
+.dark-mode .footerContainer {
+  background-color: #141414;
+}
+
+.dark-mode .heading {
+  color: #aebccf;
+}

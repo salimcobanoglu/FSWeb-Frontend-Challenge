@@ -5,14 +5,14 @@
   justify-content: center;
   align-items: center;
   margin-top: 8rem;
-  background-color: lightgoldenrodyellow;
+  /* background-color: lightgoldenrodyellow; */
 }
 .skills {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 80%;
-  background-color: lightgray;
+  /* background-color: lightgray; */
 }
 .skill-heading {
   display: flex;

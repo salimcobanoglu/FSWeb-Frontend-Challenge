@@ -3,8 +3,7 @@ import { useContext } from "react";
 import { AppContext } from "./AppContext";
 
 export default function ModeSwitch() {
-  const [darkMode, setDarkMode] = useState(false);
-  const { data, tr, setTr } = useContext(AppContext);
+  const { data, tr, setTr, darkMode, setDarkMode } = useContext(AppContext);
 
   const handleToggle = () => {
     setDarkMode(!darkMode);
@@ -15,7 +14,7 @@ export default function ModeSwitch() {
   };
 
   return (
-    <div className={`App ${darkMode ? "dark-mode" : ""}`}>
+    <div>
       <div className="modeSwitch">
         <div className="mode">
           <label className="toggle-switch">

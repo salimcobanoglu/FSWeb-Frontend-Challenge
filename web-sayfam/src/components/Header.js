@@ -1,6 +1,7 @@
 import React from "react";
 import { useContext } from "react";
 import { AppContext } from "./AppContext";
+import { Link } from "react-scroll";
 
 export default function Header() {
   const { data } = useContext(AppContext);
@@ -10,9 +11,14 @@ export default function Header() {
       <div className="headerContainer">
         <h1 className="logoCircle">S</h1>
         <div className="nav">
-          <a href="#">{data.headerSkills}</a>
-          <a href="#">{data.headerProjects}</a>
-          <a className="background" href="#">
+          <Link className="navName" to="skills" smooth={true} duration={500}>
+            {data.headerSkills}
+          </Link>
+          <Link className="navName" to="projects" smooth={true} duration={500}>
+            {data.headerProjects}
+          </Link>
+
+          <a className="background" href="mailto:salimcobanoglu@yahoo.com">
             <p>{data.headerHireMe}</p>
           </a>
         </div>

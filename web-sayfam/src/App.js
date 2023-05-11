@@ -22,6 +22,7 @@ import { useState, useEffect } from "react";
 function App() {
   const [data, setData] = useState({});
   const [tr, setTr] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     axios
@@ -36,11 +37,11 @@ function App() {
       .catch((err) => console.log(err));
   }, [tr]);
 
-  const values = { data, tr, setTr };
+  const values = { data, tr, setTr, darkMode, setDarkMode };
 
   return (
     <AppContext.Provider value={values}>
-      <div className="App">
+      <div className={`App ${darkMode ? "dark-mode" : ""}`}>
         <ModeSwitch />
         <Header />
         <About />

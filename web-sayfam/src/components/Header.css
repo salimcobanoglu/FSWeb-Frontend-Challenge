@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: lightgoldenrodyellow;
+  /* background-color: lightgoldenrodyellow; */
 }
 .headerContainer {
   display: flex;
@@ -11,7 +11,7 @@
   align-items: center;
   width: 80%;
   margin-top: 2rem;
-  background-color: lightgray;
+  /* background-color: lightgray; */
 }
 
 .logoCircle {

@@ -1,42 +1,41 @@
 import React from "react";
+import { useContext } from "react";
+import { AppContext } from "./AppContext";
 
 export default function Profile() {
+  const { data } = useContext(AppContext);
+
   return (
     <div className="profileContainer">
       <div className="profile">
         <div className="profile-infoCol">
-          <h1 className="profile-heading">Profile</h1>
+          <h1 className="profile-heading">{data.profileTitle}</h1>
           <div></div>
           <div className="profile-infoText">
             <div className="profile-box">
               <div className="right">
-                <h3 className="content-heading">Profile</h3>
+                <h3 className="content-heading">{data.profileTitle}</h3>
                 <div className="two-part">
                   <div className="keys">
-                    <p>Birth Date</p>
-                    <p>Location</p>
-                    <p>Education</p>
+                    <p>{data.profileBirth}</p>
+                    <p>{data.profileLocation}</p>
+                    <p>{data.profileEducation}</p>
                     <br /> <br />
-                    <p>Position</p>
+                    <p>{data.profilePosition}</p>
                   </div>
                   <div className="values">
                     {" "}
-                    <p>24.04.1988</p>
-                    <p>Luxembourg</p>
-                    <p>BOĞAZİÇİ ÜNİVERSİTESİ - Turizm İşletmeciliği</p>
-                    <p>Frondend Developer,UI</p>
+                    <p>{data.birthDate}</p>
+                    <p>{data.location}</p>
+                    <p>{data.education}</p>
+                    <p>{data.position}</p>
                   </div>
                 </div>
               </div>
             </div>
             <div className="about-box">
-              <h3 className="content-heading">About Me</h3>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
-                aut, odit laborum aliquam voluptatum nisi mollitia. Mnima
-                accusamus ratione soluta aperiam sit voluptate? Dicta quod
-                deserunt quam temporibus cumque magnam!{" "}
-              </p>
+              <h3 className="content-heading">{data.aboutTitle}</h3>
+              <p>{data.about}</p>
             </div>
           </div>
         </div>

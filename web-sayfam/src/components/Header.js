@@ -1,15 +1,19 @@
 import React from "react";
+import { useContext } from "react";
+import { AppContext } from "./AppContext";
 
 export default function Header() {
+  const { data } = useContext(AppContext);
+
   return (
     <div className="container">
       <div className="headerContainer">
         <h1 className="logoCircle">S</h1>
         <div className="nav">
-          <a href="#">Skills</a>
-          <a href="#">Projects</a>
+          <a href="#">{data.headerSkills}</a>
+          <a href="#">{data.headerProjects}</a>
           <a className="background" href="#">
-            <p>Hire me</p>
+            <p>{data.headerHireMe}</p>
           </a>
         </div>
       </div>

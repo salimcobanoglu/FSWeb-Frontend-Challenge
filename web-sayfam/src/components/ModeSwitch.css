@@ -26,6 +26,11 @@
 
   color: #777777;
 }
+
+.modeText span {
+  cursor: pointer;
+}
+
 #lang {
   color: rgb(13, 136, 218);
 }

@@ -1,22 +1,26 @@
 import React from "react";
+import { useContext } from "react";
+import { AppContext } from "./AppContext";
 
-const data = [
-  {
-    projectName: "Pizza",
-    projectDescription:
-      "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-    projectProgrammes: ["react", "axios"],
-  },
-  {},
-  {},
-];
+// const data = [
+//   {
+//     projectName: "Pizza",
+//     projectDescription:
+//       "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+//     projectProgrammes: ["react", "axios"],
+//   },
+//   {},
+//   {},
+// ];
 
 export default function Projects() {
+  const { data } = useContext(AppContext);
+
   return (
     <div className="projectsContainer">
       <div className="projects">
         <div className="projectCol">
-          <h1 className="profile-heading">Projects</h1>
+          <h1 className="profile-heading">{data.projectsTitle}</h1>
           <div className="cards">
             <div className="card">
               <img src="diary.png" alt="projects" />

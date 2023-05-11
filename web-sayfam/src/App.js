@@ -14,17 +14,42 @@ import Skills from "./components/Skills";
 import Profile from "./components/Profile";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import { AppContext } from "./components/AppContext";
+import axios from "axios";
+import { postData_En, postData_Tr } from "./components/data";
+import { useState, useEffect } from "react";
+
 function App() {
+  const [data, setData] = useState({});
+  const [tr, setTr] = useState(false);
+
+  useEffect(() => {
+    axios
+      .post(
+        "https://reqres.in/api/users",
+        tr === false ? postData_En : postData_Tr
+      )
+      .then((res) => {
+        setData(res.data);
+        console.log(res.data);
+      })
+      .catch((err) => console.log(err));
+  }, [tr]);
+
+  const values = { data, tr, setTr };
+
   return (
-    <div className="App">
-      <ModeSwitch />
-      <Header />
-      <About />
-      <Skills />
-      <Profile />
-      <Projects />
-      <Footer />
-    </div>
+    <AppContext.Provider value={values}>
+      <div className="App">
+        <ModeSwitch />
+        <Header />
+        <About />
+        <Skills />
+        <Profile />
+        <Projects />
+        <Footer />
+      </div>
+    </AppContext.Provider>
   );
 }
 

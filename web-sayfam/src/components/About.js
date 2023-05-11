@@ -1,6 +1,9 @@
 import React from "react";
+import { useContext } from "react";
+import { AppContext } from "./AppContext";
 
 export default function About() {
+  const { data } = useContext(AppContext);
   return (
     <div className="about-main">
       <div className="about-content">
@@ -12,17 +15,13 @@ export default function About() {
             </div>
           </div>
           <h1 className="heading">
-            Creative thinker <br />
-            Minimalism lover
+            {data.aboutTitle1} <br />
+            {data.aboutTitle2}
           </h1>
-          <p className="intro">
-            Hi, I’m Salim. I’m a full-stack developer. If you are looking for a
-            Developer who to craft solid and scalable frontend products with
-            great user experiences. Let’s shake hands with me.
-          </p>
+          <p className="intro">{data.aboutDesc}</p>
           <div className="buttons">
             <div className="hire-button">
-              <p className="whiteText">Hire me</p>
+              <p className="whiteText">{data.aboutHireMe}</p>
             </div>
 
             <div className="github-button">

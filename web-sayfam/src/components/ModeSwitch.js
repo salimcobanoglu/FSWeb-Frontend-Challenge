@@ -1,10 +1,17 @@
 import { useState } from "react";
+import { useContext } from "react";
+import { AppContext } from "./AppContext";
 
 export default function ModeSwitch() {
   const [darkMode, setDarkMode] = useState(false);
+  const { data, tr, setTr } = useContext(AppContext);
 
   const handleToggle = () => {
     setDarkMode(!darkMode);
+  };
+
+  const handleLanguage = () => {
+    setTr(!tr);
   };
 
   return (
@@ -21,11 +28,14 @@ export default function ModeSwitch() {
             <span className="slider round"></span>
           </label>
           <div className="modeText">
-            {darkMode ? "LIGHT MODE" : "DARK MODE"}
+            {darkMode ? data.lightMod : data.darkMod}
           </div>
           <div className="modeText">|</div>
           <div className="modeText">
-            <span id="lang">TÜRKÇE</span>'YE GEÇ
+            <span onClick={handleLanguage} id="lang">
+              {data.language}
+            </span>
+            {data.languageEk}
           </div>
         </div>
       </div>

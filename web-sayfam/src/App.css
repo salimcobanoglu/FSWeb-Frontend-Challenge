@@ -166,3 +166,94 @@ body {
 .dark-mode .heading {
   color: #aebccf;
 }
+
+@media (max-width: 768px) {
+  .App {
+    max-width: 100%;
+  }
+
+  .App .modeSwitch {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .App .modeSwitch .mode {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .headerContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-content img {
+    margin-top: 0.5rem;
+  }
+
+  .about-content .buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .skills {
+    flex-direction: column;
+    /* align-items: center; */
+    text-align: center;
+  }
+
+  .skill-list {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+  }
+
+  .profile-infoCol {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-infoText {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+  }
+
+  .projectCol {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cards {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+  }
+
+  .programs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerCol {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footerInfo {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+  }
+}

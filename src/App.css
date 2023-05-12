@@ -384,3 +384,148 @@ body {
     width: 80vw;
   }
 }
+
+@media (max-width: 428px) {
+  .App {
+    max-width: 100%;
+  }
+
+  .App .modeSwitch {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .App .modeSwitch .mode {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .headerContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .headerContainer .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-content img {
+    margin-top: 0.5rem;
+  }
+
+  .about-left .heading {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .about-left .intro {
+    align-self: center;
+  }
+  .about-left .intro {
+    font-size: 1rem;
+    width: 80vw;
+    text-align: center;
+  }
+
+  .about-content .about-left .buttons {
+    justify-content: center;
+  }
+
+  .buttons .github-button {
+    width: 110px;
+  }
+  .buttons .hire-button {
+    width: 100px;
+  }
+  .buttons .linkedin-button {
+    width: 125px;
+  }
+
+  .two-part .keys {
+    margin-right: 0;
+  }
+  .two-part .keys p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .two-part .values p {
+    font-size: 0.8rem;
+    text-align: left;
+  }
+
+  .profile-infoText .about-box {
+    padding-right: 0;
+  }
+
+  .line-name-parent {
+    font-size: 2rem;
+  }
+
+  .about-content .buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .skills {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .skill-list {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .profile-infoCol {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-infoText {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .projectCol {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cards {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .programs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerCol {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footerInfo {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}

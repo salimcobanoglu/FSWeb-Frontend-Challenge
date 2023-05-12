@@ -167,6 +167,133 @@ body {
   color: #aebccf;
 }
 
+.dark-mode #lang {
+  color: #bab2e7;
+}
+
+.dark-mode .nav a:hover {
+  border: 1px solid #bab2e7;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.dark-mode .background {
+  background-color: white;
+}
+.dark-mode .background p {
+  color: #3730a3;
+}
+
+.dark-mode .upper-name {
+  color: #b7aaff;
+}
+
+.dark-mode .hire-button {
+  border: 1px solid rgb(13, 136, 218);
+  background: #e1e1ff;
+}
+
+.dark-mode .hire-button .whiteText {
+  color: black;
+}
+
+.dark-mode .hire-button:hover {
+  background-color: white;
+}
+.dark-mode .github-button:hover {
+  background-color: white;
+}
+.dark-mode .linkedin-button:hover {
+  background-color: white;
+}
+
+.dark-mode .hire-button:hover a {
+  color: black;
+}
+.dark-mode .github-button:hover a {
+  color: black;
+}
+.dark-mode .linkedin-button:hover a {
+  color: black;
+}
+
+.dark-mode .github-button {
+  background: #383838;
+  border: 1px solid #e1e1ff;
+}
+
+.dark-mode .linkedin-button {
+  background: #383838;
+  border: 1px solid #e1e1ff;
+}
+.dark-mode .buttons a {
+  color: #e1e1ff;
+}
+
+.dark-mode .heading-list {
+  color: #aebccf;
+}
+
+.dark-mode .js h3 {
+  color: #b7aaff;
+}
+
+.dark-mode .react h3 {
+  color: #b7aaff;
+}
+
+.dark-mode .node h3 {
+  color: #b7aaff;
+}
+
+.dark-mode .js p {
+  color: white;
+}
+
+.dark-mode .react p {
+  color: white;
+}
+
+.dark-mode .node p {
+  color: white;
+}
+
+.dark-mode .profile-heading {
+  color: #aebccf;
+}
+
+.dark-mode .content-heading {
+  color: #b7aaff;
+}
+
+.dark-mode .keys p {
+  color: white;
+}
+
+.dark-mode .values p {
+  color: white;
+}
+
+.dark-mode .lets {
+  color: #aebccf;
+}
+
+.dark-mode .footerInfo a {
+  color: #bab2e7;
+}
+
+.dark-mode .links-footer p {
+  color: #e1e1ff;
+}
+
+.dark-mode .links-footer a {
+  color: #17d18b;
+}
+
+.dark-mode .links-footer a:nth-of-type(2) {
+  color: #0ba6f6;
+}
+
 @media (max-width: 768px) {
   .App {
     max-width: 100%;
